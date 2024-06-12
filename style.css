@@ -1,1 +1,211 @@
+html, body, *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
 
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .poppins-thin-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .poppins-extralight-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .poppins-light-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .poppins-medium-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .poppins-semibold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .poppins-bold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .poppins-extrabold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .poppins-black-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+
+body{
+    /* background: rgb(1, 15, 40); */
+    background: rgb(2, 0, 27);
+    color: #fff;
+}
+
+.main_container{
+    margin: 50px auto;
+    width: 80%;
+    max-width: 680px;
+    height: auto;
+    background: rgb(1, 15, 40);
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px 5px #00021a ;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    transition: all 1s;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 8px;
+    justify-content: space-between;
+    border-radius: 50px;
+    background:#00021a;
+    box-shadow: 2px 1px 6px 4px #ffffff0a;
+    transition: box-shadow 1s;
+}
+
+ul:hover{
+    box-shadow: none;
+}
+
+li{
+    padding: 10px;
+    margin: 0 5px;
+    transition: all 1s;
+    font-size: 1rem;
+}
+
+li:hover{
+    background: rgb(164, 24, 47);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+header h3{
+    text-align: center;
+    padding: 20px 10px 0 10px;
+    margin-bottom: 20px;
+    text-transform:uppercase;
+    font-size: 1.3rem;
+}
+
+.timer_container{
+    text-align: center;
+}
+
+.timer_container{
+    max-width: 200px;
+    height: 200px;
+    margin: 50px auto;
+    /* padding: 30px; */
+    border-radius: 50%;
+    border: 5px solid rgb(0, 58, 247);
+    box-shadow: 4px 4px 15px 10px rgba(7, 1, 71, 0.8);
+    background: #00042c;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    
+}
+
+h1{
+    margin: 0 auto;
+    text-align: center;
+    letter-spacing: 0.2rem;
+    font-size: 2rem;
+}
+
+/* @media (min-width: 300px) {
+    ul > li{
+        font-size: 1rem;
+        padding: 5px;
+    }
+
+    ul{
+        padding: 8px;
+    }
+} */
