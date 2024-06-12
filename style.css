@@ -135,7 +135,7 @@ body{
     transition: all 1s;
 }
 
-ul{
+.btn_container{
     list-style-type: none;
     display: flex;
     align-items: center;
@@ -148,18 +148,21 @@ ul{
     transition: box-shadow 1s;
 }
 
-ul:hover{
+.btn_container:hover{
     box-shadow: none;
 }
 
-li{
+.btn_container button{
     padding: 10px;
     margin: 0 5px;
     transition: all 1s;
     font-size: 1rem;
+    background: none;
+    border: none;
+    color: #fff;
 }
 
-li:hover{
+.btn_container button:hover{
     background: rgb(164, 24, 47);
     border-radius: 50px;
     cursor: pointer;
@@ -200,8 +203,12 @@ h1{
     font-size: 2rem;
 }
 
-.timer_container div > p{
-  padding: 5px;
+.timer_container div > button{
+    padding: 5px 10px;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.3rem;
 }
 
 /* @media (min-width: 300px) {
