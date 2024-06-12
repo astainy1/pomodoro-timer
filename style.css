@@ -189,14 +189,19 @@ header h3{
     display: flex;
     align-items:center;
     justify-content: center;
+    flex-direction: column;
     
 }
 
 h1{
-    margin: 0 auto;
+    margin: 20px auto;
     text-align: center;
     letter-spacing: 0.2rem;
     font-size: 2rem;
+}
+
+.timer_container div > p{
+  padding: 5px;
 }
 
 /* @media (min-width: 300px) {
