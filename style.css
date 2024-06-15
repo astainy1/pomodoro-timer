@@ -5,6 +5,7 @@ html, body, *{
     font-family: "poppins", sans-serif;
 }
 
+/* External font */
 .poppins-thin {
     font-family: "Poppins", sans-serif;
     font-weight: 100;
@@ -113,14 +114,19 @@ html, body, *{
     font-style: italic;
   }
 
+  /* Body */
 body{
-    /* background: rgb(1, 15, 40); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: rgb(2, 0, 27);
     color: #fff;
+    min-height: 100vh;
 }
 
+/* Main container style */
 .main_container{
-    margin: 50px auto;
+    margin: auto;
     width: 80%;
     max-width: 680px;
     height: auto;
@@ -135,6 +141,7 @@ body{
     transition: all 1s;
 }
 
+/* Menue container */
 .btn_container{
     list-style-type: none;
     display: flex;
@@ -162,12 +169,22 @@ body{
     color: #fff;
 }
 
+/* .btn_container > .work{
+  background: rgb(164, 24, 47);
+  border-radius: 50px;
+} */
+
+.btn_container > .work:hover{
+  background: rgb(153, 46, 64)!important;
+}
+
 .btn_container button:hover{
     background: rgb(164, 24, 47);
     border-radius: 50px;
     cursor: pointer;
 }
 
+/* Header text */
 header h3{
     text-align: center;
     padding: 20px 10px 0 10px;
@@ -176,6 +193,7 @@ header h3{
     font-size: 1.3rem;
 }
 
+/* timer container */
 .timer_container{
     text-align: center;
 }
@@ -196,21 +214,44 @@ header h3{
     
 }
 
-h1{
+/* time indicator: minute and second */
+span{
     margin: 20px auto;
     text-align: center;
     letter-spacing: 0.2rem;
     font-size: 2rem;
 }
 
-.timer_container div > button{
-    padding: 5px 10px;
-    background: none;
-    border: none;
-    color: #fff;
-    font-size: 1.3rem;
+/* Timer container button for switching */
+section #control_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding-bottom: 30px;
 }
 
+section #control_btn > button{
+  padding: 5px 6px;
+  margin: 0 10px;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  transition: border .4s;
+}
+
+/* Start button */
+#control_btn > button:hover{
+  cursor: pointer;
+  letter-spacing: .07rem;
+  border-bottom: 3px solid rgb(164, 24, 47);
+
+}
+
+
+
+/* Media query for small device width of 368 */
 /* @media (min-width: 300px) {
     ul > li{
         font-size: 1rem;
