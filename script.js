@@ -50,10 +50,12 @@ function updateTimer() {
     //control the behavior of the pause button
     if(minuteToInteger === 25 || minuteToInteger === 15 || minuteToInteger === 5){
         pause.style.display = 'none';
+        reset.style.display = 'none';
 
     }else{
 
-        pause.style.display = 'inline-block'
+        pause.style.display = 'inline-block';
+        reset.style.display = 'inline-block';
     }
 
     //Notify user
