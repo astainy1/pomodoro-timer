@@ -1,4 +1,3 @@
-
 //Testing connection
 // alert("Connected successfully!");
 
@@ -48,11 +47,21 @@ function updateTimer() {
     //update values into HTML element
     displayTime.textContent = `${convertMinutes.padStart(2, '0')} : ${convertSeconds.padStart(2, '0')}`;
 
+    //control the behavior of the pause button
+    if(minuteToInteger === 25 || minuteToInteger === 15 || minuteToInteger === 5){
+        pause.style.display = 'none';
+
+    }else{
+
+        pause.style.display = 'inline-block'
+    }
+
     //Notify user
-        if(minuteToInteger <= 3){
+        if(minuteToInteger <= 0){
             warning.style.borderColor = 'red';
             alermBeepSound();
     }
+
 }
 
 //Function to start timer
@@ -67,7 +76,7 @@ function startTimer() {
         remainingTime--;
 
         updateTimer(); //Call updateTimer function
-        alermTickingSound();
+        // alermTickingSound();
 
         //Clear timer if it reaches 0
         if (remainingTime <= 0) {
@@ -99,15 +108,21 @@ function resetTimer() {
     clearInterval(intervalId);
     isPaused = false;
 
-    if (currentTimerType === 'work') {
-        remainingTime = defaultWork;
-    } else if (currentTimerType === 'longBreak') {
-        remainingTime = defaultLongBreak;
-        console.log(remainingTime)
-    } else if(currentTimerType === 'shortBreak'){
-        remainingTime = defaultShortBreak;
-        console.log(remainingTime)
+    try {
+        
+        if (currentTimerType === 'work') {
+            remainingTime = defaultWork;
+        } else if (currentTimerType === 'longBreak') {
+            remainingTime = defaultLongBreak;
+            console.log(remainingTime)
+        } else if(currentTimerType === 'shortBreak'){
+            remainingTime = defaultShortBreak;
+            console.log(remainingTime)
+        }
     } 
+    catch (error) {
+        alert('Error!' + error);
+    }
 
     updateTimer();
 }
@@ -125,12 +140,12 @@ function renameStartBtn() {
 
 //Alerming sound
 function alermBeepSound(){
-    let soundPlay = new Audio('beep1.mp3');
+    let soundPlay = new Audio('./asset/beep1.mp3');
     soundPlay.play();
 }
 
-function alermTickingSound(){
-    let soundPlayTicking = new Audio('ticking1.mp3');
+function alermTickingSound() {
+    let soundPlayTicking = new Audio('./asset/ticking1.mp3');
     soundPlayTicking.play();
 }
 
@@ -160,11 +175,6 @@ longBreak.addEventListener('click', () => switchTimerType('longBreak'));
 //Short break timer type
 shortBreak.addEventListener('click', () => switchTimerType('shortBreak'));
 
-
 updateTimer();
 
-
 });
-
-
-
