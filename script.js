@@ -142,12 +142,12 @@ function renameStartBtn() {
 
 //Alerming sound
 function alermBeepSound(){
-    let soundPlay = new Audio('./asset/beep1.mp3');
+    let soundPlay = new Audio('beep1.mp3');
     soundPlay.play();
 }
 
 function alermTickingSound() {
-    let soundPlayTicking = new Audio('./asset/ticking1.mp3');
+    let soundPlayTicking = new Audio('ticking1.mp3');
     soundPlayTicking.play();
 }
 
