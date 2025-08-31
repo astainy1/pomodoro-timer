@@ -1,7 +1,7 @@
 //Testing connection
 // alert("Connected successfully!");
 
-// Create a pomodoro time with default settings of 25 minutes for work
+// Create a pomodoro timer with default settings of 25 minutes for work
 // 15 minutes for long breaks, 5 minutes for short breaks.
 // Users should be able to start, pause, reset the timer
 // And switch between work, long break, and short break intervals.
